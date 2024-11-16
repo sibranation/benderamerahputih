@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ceritatinta": {
+    "benderamerahputih": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ceritatinta",
+            "outputPath": "dist/benderamerahputih",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ceritatinta:build:production"
+              "buildTarget": "benderamerahputih:build:production"
             },
             "development": {
-              "buildTarget": "ceritatinta:build:development"
+              "buildTarget": "benderamerahputih:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ceritatinta:build"
+            "buildTarget": "benderamerahputih:build"
           }
         },
         "test": {

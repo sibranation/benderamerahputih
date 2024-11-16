@@ -10,7 +10,7 @@ export const ONLINE_STORES: OnlineStore[] = [
   {
     image: 'assets/ecommerce/logo-tokopedia.png',
     name: 'Cerita Tinta Store',
-    link: 'https://www.tokopedia.com/ceritatinta',
+    link: 'https://www.tokopedia.com/benderamerahputih',
     isFreeShipping: true
   }
 ];

@@ -1,5 +1,5 @@
 {
-  "name": "ceritatinta",
+  "name": "benderamerahputih",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ceritatinta": "node dist/ceritatinta/server/server.mjs",
+    "serve:ssr:benderamerahputih": "node dist/benderamerahputih/server/server.mjs",
     "preinstall": "npx only-allow pnpm",
     "lint": "eslint src",
     "lint-fix": "eslint src --fix",
