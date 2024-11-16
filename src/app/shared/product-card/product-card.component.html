@@ -1,0 +1,28 @@
+<div class="product-card">
+  <div
+    class="product-card-item"
+    *ngFor="let item of product"
+    (click)="handleProductClick(item.code)"
+  >
+    <div class="product-card-item__image">
+      <img [src]="item.images.thumbnail" [alt]="item.title" />
+    </div>
+    <div class="product-card-item__title">{{ item.title }}</div>
+    <div class="product-card-item__description">{{ item.description }}</div>
+    <ng-container *ngIf="item.stock; else outOfStock">
+      <div class="product-card-item__price">{{ item.price }}</div>
+      <div class="product-card-item__discounted">
+        <span class="product-card-item__discounted--price">{{
+          item.discounted_price
+        }}</span>
+        <span class="product-card-item__discounted--percentage">{{
+          item.discounted_percentage
+        }}</span>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<ng-template #outOfStock>
+  <span class="out-of-stock">Stok Habis</span>
+</ng-template>

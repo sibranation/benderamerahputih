@@ -1,0 +1,21 @@
+/.angular/cache
+/node_modules/
+/dist/
+.DS_Store
+/.idea
+/.idea/workspace.xml
+*/.idea/*
+/.vscode
+/coverage
+/test_result
+/dist
+/reports
+TESTS-*.xml
+.classpath
+.settings
+.scannerwork
+newrelic_agent.log
+/log
+.angular
+/Chrome *
+eslint-report.json

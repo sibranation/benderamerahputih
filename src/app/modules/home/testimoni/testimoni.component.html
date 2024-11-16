@@ -1,0 +1,20 @@
+<section>
+  <div class="title">Apa yang mereka katakan tentang Cerita Tinta</div>
+  <div class="description">Cerita dari mereka yang memesan produk kami</div>
+
+  <div class="testimoni">
+    <div class="testimoni-item" *ngFor="let item of testimoni">
+      <div class="user-testi">
+        <div class="user-testi__image">
+          <img [src]="item.image" alt="profile pic" />
+        </div>
+        <div>
+          <div class="name">{{ item.name }}</div>
+          <div class="order">{{ item.order }}</div>
+        </div>
+      </div>
+
+      <div class="message">{{ item.testimoni }}</div>
+    </div>
+  </div>
+</section>

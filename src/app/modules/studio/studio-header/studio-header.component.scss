@@ -1,0 +1,45 @@
+header {
+  background: #004aad;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .go-home {
+    color: white;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 720px) {
+  header {
+    background: #004aad;
+    padding: 14px;
+
+    .logo {
+      height: 36px !important;
+      font-size: 18px !important;
+    }
+
+    .go-home {
+      font-size: 14px;
+    }
+  }
+}

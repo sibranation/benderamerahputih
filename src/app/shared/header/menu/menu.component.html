@@ -1,0 +1,31 @@
+<div class="navigation">
+  <div class="menu">
+    <ng-container *ngTemplateOutlet="listMenu"></ng-container>
+
+    <div class="studio-btn" (click)="onStudioClick()">Studio</div>
+  </div>
+</div>
+
+<div class="hamburger" (click)="handleHamburgerClick()">
+  <mat-icon>menu</mat-icon>
+</div>
+
+<div class="overlay" [ngClass]="{ open: isOpen }">
+  <div class="close" (click)="handleCloseClick()">
+    <mat-icon>close</mat-icon>
+  </div>
+
+  <div class="over-menu" (click)="handleCloseClick()">
+    <ng-container *ngTemplateOutlet="listMenu"></ng-container>
+  </div>
+</div>
+
+<ng-template #listMenu>
+  <a
+    *ngFor="let item of menu"
+    [routerLink]="item.link"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: item.isExact }"
+    >{{ item.name }}</a
+  >
+</ng-template>

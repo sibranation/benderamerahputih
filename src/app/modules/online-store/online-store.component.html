@@ -1,0 +1,21 @@
+<div class="section">
+  <h2>Pembelian Online</h2>
+  <div class="h2-description">
+    Jelajahi pengalaman belanja online terbaik di toko resmi kami
+  </div>
+  <div class="stores">
+    <div
+      *ngFor="let item of onlineStores"
+      class="store-item"
+      (click)="handleStoreClick(item)"
+    >
+      <img src="{{ item.image }}" alt="{{ item.name }}" />
+      <div class="store-name">
+        {{ item.name }}
+        <div class="free-shipping">
+          <span *ngIf="item.isFreeShipping">Gratis Ongkir</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

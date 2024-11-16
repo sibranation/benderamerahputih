@@ -1,0 +1,11 @@
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media (max-width: 720px) {
+  img {
+    height: 64px;
+  }
+}

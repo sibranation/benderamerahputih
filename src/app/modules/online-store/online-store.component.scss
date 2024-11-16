@@ -1,0 +1,44 @@
+.stores {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .store-item {
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    gap: 16px;
+    border: 1px solid #ccc;
+    padding: 12px 24px;
+    cursor: pointer;
+    align-items: center;
+
+    img {
+      height: 72px;
+      width: 69px;
+    }
+
+    .store-name {
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .free-shipping {
+      font-size: 13px;
+      margin-top: 6px;
+      background-color: #c9fde0;
+      color: #00aa5b;
+      padding: 4px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .store-item {
+    width: 100%;
+  }
+}

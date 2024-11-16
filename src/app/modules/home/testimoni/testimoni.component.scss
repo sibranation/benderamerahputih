@@ -1,0 +1,73 @@
+section {
+  background: white;
+  margin-top: 60px;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px #ccc;
+  margin-bottom: 60px;
+  padding: 60px;
+
+  .testimoni {
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+    gap: 24px;
+
+    .testimoni-item {
+      width: 33%;
+      margin-bottom: 20px;
+
+      .name {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .order {
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+
+      .message {
+        font-size: 15px;
+        line-height: 19px;
+      }
+    }
+
+    .user-testi {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 16px;
+
+      &__image {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .testimoni {
+    flex-direction: column;
+
+    .testimoni-item {
+      width: 100% !important;
+      padding: 0 20px;
+    }
+
+    .name {
+      font-size: 15px !important;
+    }
+
+    .message {
+      font-size: 14px !important;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<section>
+  <div class="title">Apa yang kamu butuhkan hari ini ?</div>
+  <div class="description">
+    Kami menawarkan produk yang bisa menyesuaikan dengan kebutuhanmu
+  </div>
+
+  <div class="services">
+    <div class="service-item" *ngFor="let item of services">
+      <img [src]="item.image" [alt]="item.title" />
+      <div class="title">{{ item.title }}</div>
+      <div class="description">{{ item.note }}</div>
+    </div>
+  </div>
+</section>

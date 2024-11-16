@@ -1,0 +1,11 @@
+<div class="section">
+  <h2>Daftar Buku</h2>
+  <div class="h2-description">
+    Jelajahi beraneka ragam jenis dan desain buku dengan kualitas terbaik
+  </div>
+
+  <app-product-card
+    [product]="notebook"
+    (onProductClick)="handleProductClick($event)"
+  ></app-product-card>
+</div>
