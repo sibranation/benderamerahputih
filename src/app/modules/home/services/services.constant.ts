@@ -1,17 +1,7 @@
 export const SERVICES = [
   {
-    title: 'Buku Catatan / Journal',
-    image: 'assets/services/notebook.png',
-    note: 'Tersedia untuk ukuran A5'
+    title: 'Bendera Merah Putih (120 x 80)',
+    image: 'assets/services/prod-1.webp',
+    note: 'Bahan Kahatex'
   },
-  {
-    title: 'Gift / Souvenir',
-    image: 'assets/services/souvenir.png',
-    note: 'Cocok untuk pernikahan / hadiah ulang tahun'
-  },
-  {
-    title: 'Buku Gambar / Mewarnai',
-    image: 'assets/services/drawing.png',
-    note: 'Tersedia untuk ukuran A5 dan A4'
-  }
 ];
