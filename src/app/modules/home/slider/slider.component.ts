@@ -12,10 +12,10 @@ import { Router } from '@angular/router';
 export class SliderComponent {
   constructor(private readonly router: Router) {}
   handleStudioClick() {
-    this.router.navigate(['/studio']);
+    // this.router.navigate(['/studio']);
   }
 
   handlePackageClick() {
-    this.router.navigate(['/books']);
+    // this.router.navigate(['/books']);
   }
 }
