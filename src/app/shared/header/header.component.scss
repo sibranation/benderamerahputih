@@ -1,27 +1,110 @@
-header {
-  background: white;
+/* Header & Navigation */
+.header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.brand-logo .brand-title {
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #d32f2f;
+  font-weight: 700;
+  text-align: center;
+}
+
+.brand-logo .brand-subtitle {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: #555;
+  text-align: center;
+}
+
+.nav-links {
+  display: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: 0.3s ease-in-out;
+  padding: 0 24px;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d32f2f;
+}
+
+.mobile-menu-button {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  transition:
+    max-height 0.4s ease-in-out,
+    opacity 0.4s ease-in-out;
+  padding: 0 24px 16px 0;
+  margin-top: 20px;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 12px 0;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.mobile-menu a:hover {
+  color: #d32f2f;
+}
+.mobile-menu {
+  overflow: hidden;
+  transition:
+    max-height 0.4s ease-in-out,
+    opacity 0.4s ease-in-out;
+}
+.mobile-menu.is-active {
+  max-height: 300px;
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
     display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 0 20px;
-    justify-content: space-between;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
   }
-
-  .logo {
-    height: 50px;
-    margin: 20px 0;
-    display: flex;
-    font-weight: bold;
-    font-size: 19px;
-    align-items: center;
-    gap: 10px;
-
-    img {
-      height: 100%;
-    }
+  .mobile-menu-button {
+    display: none;
+  }
+  .grid-md-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero-content h2 {
+    font-size: 4rem;
+  }
+  .premium-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

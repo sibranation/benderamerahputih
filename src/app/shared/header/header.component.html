@@ -1,10 +1,40 @@
-<header>
+<header class="header">
   <div class="container">
-    <div class="logo">
-      <img src="/assets/benderamerahputih.png" alt="Logo" (click)="onLogoClick()" />
-      Bendera Merah Putih
+    <nav class="navbar">
+      <div class="brand-logo">
+        <div class="brand-title">BENDERA</div>
+        <div class="brand-subtitle">MERAH PUTIH</div>
+      </div>
+      <div class="nav-links" *ngIf="!isMobileMenuOpen">
+        <a href="#home" smoothScroll (click)="onMenuClick()">Home</a>
+        <a href="#history" smoothScroll (click)="onMenuClick()">History</a>
+        <a href="#exclusive" smoothScroll (click)="onMenuClick()">Sang Saka Exclusive</a>
+        <a href="#about" smoothScroll (click)="onMenuClick()">About</a>
+      </div>
+      <button id="mobile-menu-button" class="mobile-menu-button" (click)="toggleMobileMenu()">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" *ngIf="isMobileMenuOpen" class="mobile-menu">
+      <a href="#home" smoothScroll (click)="onMenuClick()">Home</a>
+      <a href="#history" smoothScroll (click)="onMenuClick()">History</a>
+      <a href="#exclusive" smoothScroll (click)="onMenuClick()">Sang Saka Exclusive</a>
+      <a href="#about" smoothScroll (click)="onMenuClick()">About</a>
     </div>
-
-    <app-menu></app-menu>
   </div>
 </header>
